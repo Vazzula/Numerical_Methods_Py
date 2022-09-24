@@ -124,7 +124,7 @@ def regula_falsi(interval):
 
     iteration,sub=1,0
 
-    # Table is calculated to a max of 20 iterations
+    # Table is calculated to a max of 10 iterations
     while(iteration<10):
         
         sub=( (interval[0]*eq.subs({'x':interval[1]})) - (interval[1]*eq.subs({'x':interval[0]})) )/( eq.subs({'x':interval[1]}) - eq.subs({'x':interval[0]}) )
